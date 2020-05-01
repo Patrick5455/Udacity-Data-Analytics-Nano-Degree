@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)https://review.udacity.com/#!/rubrics/1125/view -->
+<html data-ng-app="udacity.grading" data-enforce-browser="" lang="en" class="ng-scope"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">[uib-tooltip-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-popup].tooltip.right-bottom > .tooltip-arrow,[uib-popover-popup].popover.top-left > .arrow,[uib-popover-popup].popover.top-right > .arrow,[uib-popover-popup].popover.bottom-left > .arrow,[uib-popover-popup].popover.bottom-right > .arrow,[uib-popover-popup].popover.left-top > .arrow,[uib-popover-popup].popover.left-bottom > .arrow,[uib-popover-popup].popover.right-top > .arrow,[uib-popover-popup].popover.right-bottom > .arrow{top:auto;bottom:auto;left:auto;right:auto;margin:0;}[uib-popover-popup].popover,[uib-popover-template-popup].popover{display:block !important;}</style><style type="text/css">.uib-position-measure{display:block !important;visibility:hidden !important;position:absolute !important;top:-9999px !important;left:-9999px !important;}.uib-position-scrollbar-measure{position:absolute;top:-9999px;width:50px;height:50px;overflow:scroll;}</style><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    <!--[if lte IE 9]>
+    <script type="text/javascript">
+      window.location = 'https://www.udacity.com/upgrade';
+    </script>
+    <![endif]-->
+    <title>Udacity Reviews</title>
+    
+    <link rel="shortcut icon" href="https://review.udacity.com/assets/images/favicon.ico">
+    <meta name="description" content="Discover online classes taught by top instructors and industry experts. Take courses at your own pace.">
+
+    <meta name="robots" content="noodp">
+
+    <!--
+      These properties are here so social shares of review pages works
+      properly. We decided to let them apply to every page on the site
+      because we only expect people to share the review pages.
+
+      Guidelines obtained from https://moz.com/blog/meta-data-templates-123
+    -->
+
+    <!-- facebook -->
+    <meta property="og:title" content="Look at my Udacity Project Feedback!">
+    <meta property="og:description" content="A review of my work and personalized tips to improve.">
+    <meta property="og:image" content="https://s3-us-west-1.amazonaws.com/udacity-content/images/reviews/facebook-thumbnail-neutral.png ">
+
+    <!-- twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@udacity">
+    <meta name="twitter:title" content="Udacity Project Feedback">
+    <meta name="twitter:description" content="A review of my work and personalized tips to improve.">
+    <!-- "Twitter Summary card images must be at least 120x120px" -->
+    <meta name="twitter:image" content="https://s3-us-west-1.amazonaws.com/udacity-content/images/reviews/twitter-thumbnail-neutral.png ">
+
+    <meta name="application-name" content="Udacity">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="assets/img/logos/udacity/windows_tile/udacity-full-144x144.png">
+
+    <meta name="google-site-verification" content="ELX2btu3VElBKIdvkGj5ESBnJh_Dg9PnWjuCwVkPEkA">
+
+    <meta http-equiv="X-UA-Compatible" content="requiresActiveX=true">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="https://review.udacity.com/assets/images/apple-touch-icon.png">
+
+    <link type="text/plain" rel="author" href="http://udacity.com/humans.txt">
+
+    <link href="./Udacity Reviews_files/css" rel="stylesheet" type="text/css">
+    <link href="./Udacity Reviews_files/css(1)" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./Udacity Reviews_files/udacity-base.min.css" type="text/css">
+
+    <!-- inject:css -->
+    <link rel="stylesheet" href="./Udacity Reviews_files/grading_74b2de65.css">
+    <!-- endinject -->
+
+    <style>
+    @font-face {
+      font-family: 'Glyphicons Halflings';
+
+      src: url('/assets/fonts/glyphicons/glyphicons-halflings-regular.eot');
+      src: url('/assets/fonts/glyphicons/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('/assets/fonts/glyphicons/glyphicons-halflings-regular.woff2') format('woff2'), url('/assets/fonts/glyphicons/glyphicons-halflings-regular.woff') format('woff'), url('/assets/fonts/glyphicons/glyphicons-halflings-regular.ttf') format('truetype'), url('/assets/fonts/glyphicons/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+    }
+    </style>
+    <script type="text/javascript" async="" src="./Udacity Reviews_files/analytics.min.js"></script><script type="text/javascript">
+      var segment_write_key = "toT8LUD8hh9KKz18k1i8l8AnAJlF27VY"; // production key for segment
+    </script><script data-dapp-detection="">
+(function() {
+  let alreadyInsertedMetaTag = false
+
+  function __insertDappDetected() {
+    if (!alreadyInsertedMetaTag) {
+      const meta = document.createElement('meta')
+      meta.name = 'dapp-detected'
+      document.head.appendChild(meta)
+      alreadyInsertedMetaTag = true
+    }
+  }
+
+  if (window.hasOwnProperty('web3')) {
+    // Note a closure can't be used for this var because some sites like
+    // www.wnyc.org do a second script execution via eval for some reason.
+    window.__disableDappDetectionInsertion = true
+    // Likely oldWeb3 is undefined and it has a property only because
+    // we defined it. Some sites like wnyc.org are evaling all scripts
+    // that exist again, so this is protection against multiple calls.
+    if (window.web3 === undefined) {
+      return
+    }
+    __insertDappDetected()
+  } else {
+    var oldWeb3 = window.web3
+    Object.defineProperty(window, 'web3', {
+      configurable: true,
+      set: function (val) {
+        if (!window.__disableDappDetectionInsertion)
+          __insertDappDetected()
+        oldWeb3 = val
+      },
+      get: function () {
+        if (!window.__disableDappDetectionInsertion)
+          __insertDappDetected()
+        return oldWeb3
+      }
+    })
+  }
+})()</script>
+    <script type="text/javascript">
+      !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.1.0";
+        analytics.load(segment_write_key);
+      }}();
+    </script>
+
+  </head>
+  <body data-modal-anti-scroll-helper="" class="responsive ng-scope" ng-controller="MainCtrl as main">
+    <!-- ngInclude: main.pageContext.headerURL --><div ng-include="main.pageContext.headerURL" class="ng-scope"><header class="navbar site-nav navbar-inverse navbar-static-top ng-scope" role="navigation"> <div class="container"> <div class="navbar-header"> <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse"> <span class="sr-only ng-scope" translate="">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="logo navbar-brand" href="https://udacity.com/" id="header-logo"> <img alt="Udacity Logo" src="./Udacity Reviews_files/logo.min.svg"> </a> </div> <nav class="navbar-collapse collapse text-center-xs" id="navbar-collapse" role="navigation"> <ul class="nav navbar-nav navbar-right"> <!-- ngIf: isStaff --> <!-- ngIf: isGrader --> <li> <a data-ng-click="main.logout()" href="https://review.udacity.com/" translate="" class="ng-scope">Logout</a> </li> </ul> <ul class="nav navbar-nav navbar-right"> <li class="dropdown"> <ul class="dropdown-menu"> <a data-ng-click="main.logout()" href="https://review.udacity.com/" translate="" class="ng-scope">Logout</a> </ul> </li> </ul> </nav> </div> </header> </div>
+    <div id="page-content" data-qualaroo-survey-info-hack="">
+      <div loading-container="" class="container-fluid"><div ng-show="loading" class="row ng-hide"> <div class="col-sm-6 col-sm-offset-3 text-center"> <div class="row row-gap-huge"></div> <img src="./Udacity Reviews_files/loading.gif"> <div class="row row-gap-huge"></div> </div> </div> <div ng-show="!loading" class=""> <div ng-transclude="">
+        <div class="row row-gap-medium ng-scope ng-isolate-scope ng-hide fadeOutUp animated" ng-show="!!message &amp;&amp; !dismissed" ng-class="{fadeInDown: !!message, fadeOutUp: dismissed, animated: !!message || dismissed}" alert-box="" style=""> <div class="col-md-offset-2 col-md-8"> <div class="alert  hr-slim alert-info"> <button type="button" ng-click="dismiss()" class="close" aria-label="Close"> <span aria-hidden="true">×</span> </button> <span ng-bind-html="message" class="ng-binding"></span> </div> </div> </div>
+        <!-- uiView:  --><div ui-view="" autoscroll="true" class="ng-scope"><!-- uiView:  --><div ui-view="" autoscroll="true" class="ng-scope"><div ng-controller="RubricCtrl as ctrl" class="row ng-scope"> <div id="proj-spec-div" class="col-xs-offset-1 col-xs-10"> <h2 id="project-spec-headline" translate="" class="ng-scope">Project Specification</h2> <h3 id="project-name" ng-bind-html="localize(ctrl.rubric.project, &#39;name&#39;, markup=true)" class="ng-binding"><p>Explore Weather Trends</p>
+</h3> <div rubric-table="" rubric="ctrl.rubric" settings="ctrl.tableSettings" class="ng-isolate-scope"><!-- ngRepeat: section in rubric.sections --><div ng-repeat="section in rubric.sections" class="ng-scope"> <span class="rubric-section ng-binding" ng-bind-html="localize(section, &#39;name&#39;, markup=true)"><p>Analysis</p>
+</span> <table class="table table-bordered section-table"> <thead> <tr> <!-- ngIf: !rubric.hide_criteria --><th class="rubric-category criteria-column col-xs-3 ng-scope" ng-if="!rubric.hide_criteria"> <span translate="" class="ng-scope">Criteria</span> </th><!-- end ngIf: !rubric.hide_criteria --> <th class="rubric-category meets-specs-column" ng-class="settings.showReviewerTips ? col-xs-4 : (settings.showCompletedChecklist ? col-xs-6 : col-xs-7)"> <span translate="" class="ng-scope">Meets Specifications</span> </th> <!-- ngIf: settings.showReviewerTips --> <!-- ngIf: settings.showCompletedChecklist --> </tr> </thead> <tbody>  <!-- ngRepeat: rubricItem in section.rubric_items --><tr ng-repeat="rubricItem in section.rubric_items" class="ng-scope"> <!-- ngIf: !rubric.hide_criteria --><td class="rubric-item criteria col-xs-3 ng-binding ng-scope" ng-if="!rubric.hide_criteria" ng-bind-html="localize(rubricItem, &#39;criteria&#39;, markup=true)"><p>Student is able to extract data from a database using SQL.</p>
+</td><!-- end ngIf: !rubric.hide_criteria --> <td class="rubric-item meets-spec ng-binding" ng-class="settings.showReviewerTips ? col-xs-4 : (settings.showCompletedChecklist ? col-xs-6 : col-xs-7)" ng-bind-html="localize(rubricItem, &#39;passed_description&#39;, markup=true)"><ul>
+<li>The SQL query used to extract the data is included.</li>
+<li>The query runs without error and pulls the intended data.</li>
+</ul>
+</td> <!-- ngIf: settings.showReviewerTips --> <!-- ngIf: settings.showCompletedChecklist --> </tr><!-- end ngRepeat: rubricItem in section.rubric_items --><tr ng-repeat="rubricItem in section.rubric_items" class="ng-scope"> <!-- ngIf: !rubric.hide_criteria --><td class="rubric-item criteria col-xs-3 ng-binding ng-scope" ng-if="!rubric.hide_criteria" ng-bind-html="localize(rubricItem, &#39;criteria&#39;, markup=true)"><p>Student is able to manipulate data in a spreadsheet or similar tool.</p>
+</td><!-- end ngIf: !rubric.hide_criteria --> <td class="rubric-item meets-spec ng-binding" ng-class="settings.showReviewerTips ? col-xs-4 : (settings.showCompletedChecklist ? col-xs-6 : col-xs-7)" ng-bind-html="localize(rubricItem, &#39;passed_description&#39;, markup=true)"><p>Moving averages are calculated to be used in the line chart.</p>
+</td> <!-- ngIf: settings.showReviewerTips --> <!-- ngIf: settings.showCompletedChecklist --> </tr><!-- end ngRepeat: rubricItem in section.rubric_items --><tr ng-repeat="rubricItem in section.rubric_items" class="ng-scope"> <!-- ngIf: !rubric.hide_criteria --><td class="rubric-item criteria col-xs-3 ng-binding ng-scope" ng-if="!rubric.hide_criteria" ng-bind-html="localize(rubricItem, &#39;criteria&#39;, markup=true)"><p>Student is able to create a clear data visualization.</p>
+</td><!-- end ngIf: !rubric.hide_criteria --> <td class="rubric-item meets-spec ng-binding" ng-class="settings.showReviewerTips ? col-xs-4 : (settings.showCompletedChecklist ? col-xs-6 : col-xs-7)" ng-bind-html="localize(rubricItem, &#39;passed_description&#39;, markup=true)"><ul>
+<li>A line chart is included in the submission.</li>
+<li>The chart and its axes have titles, and there's a clear legend (if applicable).</li>
+</ul>
+</td> <!-- ngIf: settings.showReviewerTips --> <!-- ngIf: settings.showCompletedChecklist --> </tr><!-- end ngRepeat: rubricItem in section.rubric_items --><tr ng-repeat="rubricItem in section.rubric_items" class="ng-scope"> <!-- ngIf: !rubric.hide_criteria --><td class="rubric-item criteria col-xs-3 ng-binding ng-scope" ng-if="!rubric.hide_criteria" ng-bind-html="localize(rubricItem, &#39;criteria&#39;, markup=true)"><p>Student is able to interpret a data visualization. </p>
+</td><!-- end ngIf: !rubric.hide_criteria --> <td class="rubric-item meets-spec ng-binding" ng-class="settings.showReviewerTips ? col-xs-4 : (settings.showCompletedChecklist ? col-xs-6 : col-xs-7)" ng-bind-html="localize(rubricItem, &#39;passed_description&#39;, markup=true)"><ul>
+<li>The student includes four observations about their provided data visualization.</li>
+<li>The four observations are accurate.</li>
+</ul>
+</td> <!-- ngIf: settings.showReviewerTips --> <!-- ngIf: settings.showCompletedChecklist --> </tr><!-- end ngRepeat: rubricItem in section.rubric_items --> </tbody> </table> </div><!-- end ngRepeat: section in rubric.sections --> </div> <!-- ngIf: ctrl.rubric.stand_out --><div id="stand-out" ng-if="ctrl.rubric.stand_out" class="col-xs-offset-1 col-xs-10 ng-scope"> <h3 id="stand-out-headline" class="text-center ng-scope" translate="">Suggestions to Make Your Project Stand Out!</h3> <div id="stand-out-text" ng-bind-html="localize(ctrl.rubric, &#39;stand_out&#39;, markup=true)" class="ng-binding"><p>Think about other ways to compare and find insights from this data beyond interpreting the chart. Hear are a few ideas:</p>
+<ul>
+<li>What's the correlation coefficient?</li>
+<li>Can you estimate the average temperature in your city based on the average global temperature?</li>
+<li>Multiple cities - Add your favorite cities from around the globe to your visualization. What do you learn about them?</li>
+</ul>
+</div> </div><!-- end ngIf: ctrl.rubric.stand_out --> </div> </div> </div></div>
+      </div> </div> </div>
+    </div>
+
+    <!-- ngInclude: main.pageContext.footerURL --><div ng-include="main.pageContext.footerURL" class="ng-scope"><footer id="footer" ng-controller="FooterCtrl as ctrl" class="ng-scope"> <div class="container"> <ul class="nav nav-pills"> <!-- ngIf: currentUser && currentUser.role !== 'student' --> <!-- ngIf: currentUser && currentUser.role !== 'student' --> </ul> </div> </footer> </div>
+
+    <script src="./Udacity Reviews_files/jquery.min.js"></script>
+    <script src="./Udacity Reviews_files/materialize.min.js"></script>
+    <script src="./Udacity Reviews_files/angular.min.js"></script>
+
+    <!-- inject:js -->
+    <script src="./Udacity Reviews_files/_vendor_732c2b36.js"></script>
+    <script src="./Udacity Reviews_files/grading_732c2b36.js"></script>
+    <!-- endinject -->
+  
+
+<div class="hiddendiv common"></div></body></html>
