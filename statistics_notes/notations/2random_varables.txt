@@ -1,0 +1,79 @@
+Playback Rate
+CaptionsPicture-in-Picture
+
+Fullscreen
+Example to Introduce Notation
+There is a lot going on in this video - here is a recap of the big ideas.
+
+Rows and Columns
+If you aren't familiar with spreadsheets, this will be covered in detail in future lessons. Spreadsheets are a common way to hold data. They are composed of rows and columns. Rows run horizontally, while columns run vertically. Each column in a spreadsheet commonly holds a specific variable, while each row is commonly called an instance or individual.
+
+The example used in the video is shown below.
+
+Date	Day of Week	Time Spent On Site (X)	Buy (Y)
+June 15	Thursday	5	No
+June 15	Thursday	10	Yes
+June 16	Friday	20	Yes
+This is a row:
+
+Date	Day of Week	Time Spent On Site (X)	Buy (Y)
+June 15	Thursday	5	No
+This is a column:
+
+Time Spent On Site (X)
+5
+10
+20
+Before Collecting Data
+Before collecting data, we usually start with a question, or many questions, that we would like to answer. The purpose of data is to help us in answering these questions.
+
+Random Variables
+A random variable is a placeholder for the possible values of some process (mostly... the term 'some process' is a bit ambiguous). As was stated before, notation is useful in that it helps us take complex ideas and simplify (often to a single letter or single symbol). We see random variables represented by capital letters (X, Y, or Z are common ways to represent a random variable).
+
+We might have the random variable X, which is a holder for the possible values of the amount of time someone spends on our site. Or the random variable Y, which is a holder for the possible values of whether or not an individual purchases a product.
+
+X is 'a holder' of the values that could possibly occur for the amount of time spent on our website. Any number from 0 to infinity really.
+
+Capital vs. Lower Case Letters
+Random variables are represented by capital letters. Once we observe an outcome of these random variables, we notate it as a lower case of the same letter.
+
+Example 1
+For example, the amount of time someone spends on our site is a random variable (we are not sure what the outcome will be for any particular visitor), and we would notate this with X. Then when the first person visits the website, if they spend 5 minutes, we have now observed this outcome of our random variable. We would notate any outcome as a lowercase letter with a subscript associated with the order that we observed the outcome.
+
+If 5 individuals visit our website, the first spends 10 minutes, the second spends 20 minutes, the third spends 45 mins, the fourth spends 12 minutes, and the fifth spends 8 minutes; we can notate this problem in the following way:
+
+X is the amount of time an individual spends on the website.
+
+\bold{x_1}x 
+1
+​	  = 10,       \bold{x_2}x 
+2
+​	  = 20       \bold{x_3}x 
+3
+​	  = 45       \bold{x_4}x 
+4
+​	  = 12       \bold{x_5}x 
+5
+​	  = 8.
+
+The capital X is associated with this idea of a random variable, while the observations of the random variable take on lowercase x values.
+
+Example 2
+Taking this one step further, we could ask:
+
+What is the probability someone spends more than 20 minutes in our website?
+
+In notation, we would write:
+
+P(X > 20)?
+
+Here P stands for probability, while the parentheses encompass the statement for which we would like to find the probability. Since X represents the amount of time spent on the website, this notation represents the probability the amount of time on the website is greater than 20.
+
+We could find this in the above example by noticing that only one of the 5 observations exceeds 20. So, we would say there is a 1 (the 45) in 5 or 20% chance that an individual spends more than 20 minutes on our website (based on this dataset).
+
+Example 3
+If we asked: What is the probability of an individual spending 20 or more minutes on our website? We could notate this as:
+
+P(X \geq≥ 20)?
+
+We could then find this by noticing there are two out of the five individuals that spent 20 or more minutes on the website. So this probability is 2 out of 5 or 40%.

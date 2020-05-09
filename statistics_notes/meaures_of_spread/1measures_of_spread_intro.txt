@@ -1,0 +1,8 @@
+Measures of Spread
+Measures of Spread are used to provide us an idea of how spread out our data are from one another. Common measures of spread include:
+
+Range
+Interquartile Range (IQR)
+Standard Deviation
+Variance
+Throughout this lesson you will learn how to calculate these, as well as why we would use one measure of spread over another.

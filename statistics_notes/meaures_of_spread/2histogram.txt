@@ -1,0 +1,7 @@
+Histograms
+Histograms are super useful to understanding the different aspects of quantitative data. In the upcoming concepts, you will see histograms used all the time to help you understand the four aspects we outlined earlier regarding a quantitative variable:
+
+center
+spread
+shape
+outliers

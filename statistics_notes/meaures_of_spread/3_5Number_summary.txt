@@ -1,0 +1,27 @@
+Calculating the 5 Number Summary
+The five number summary consist of 5 values:
+
+Minimum: The smallest number in the dataset.
+\bold{Q_1}Q 
+1
+​	 : The value such that 25% of the data fall below.
+\bold{Q_2}Q 
+2
+​	 : The value such that 50% of the data fall below.
+\bold{Q_3}Q 
+3
+​	 : The value such that 75% of the data fall below.
+Maximum: The largest value in the dataset.
+In the above video we saw that calculating each of these values was essentially just finding the median of a bunch of different dataset. Because we are essentially calculating a bunch of medians, the calculation depends on whether we have an odd or even number of values.
+
+Range
+The range is then calculated as the difference between the maximum and the minimum.
+
+IQR
+The interquartile range is calculated as the difference between \bold{Q_3}Q 
+3
+​	  and \bold{Q_1}Q 
+1
+​	 .
+
+In the upcoming sections, you will practice this with Katie and on your own.

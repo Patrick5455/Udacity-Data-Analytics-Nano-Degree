@@ -1,0 +1,76 @@
+Notation for Calculating the Mean
+We know that the mean is calculated as the sum of all our values divided by the number of values in our dataset.
+
+In our current notation, adding all of our values together can be extremely tedious. If we want to add 3 values of some random variable together, we would use the notation:
+
+\bold{x_1} + \bold{x_2} + \bold{x_3}x 
+1
+​	 +x 
+2
+​	 +x 
+3
+​	 
+
+If we want to add 6 values together, we would use the notation:
+
+\bold{x_1} + \bold{x_2} + \bold{x_3} + \bold{x_4} + \bold{x_5} + \bold{x_6}x 
+1
+​	 +x 
+2
+​	 +x 
+3
+​	 +x 
+4
+​	 +x 
+5
+​	 +x 
+6
+​	 
+
+To extend this to add one hundred, one thousand, or one million values would be ridiculous! How can we make this easier to communicate?!
+
+
+Final Steps for Calculating the Mean
+To finalize our calculation of the mean, we introduce n as the total number of values in our dataset. We can use this notation both at the top of our summation, as well as for the value that we divide by when calculating the mean.
+
+\frac{1}{n}\sum\limits_{i=1}^nx_i 
+n
+1
+​	  
+i=1
+∑
+n
+​	 x 
+i
+​	 
+
+Instead of writing out all of the above, we commonly write \bar{x} 
+x
+¯
+  to represent the mean of a dataset. Although, similar to the first video, we could use any variable. Therefore, we might also write \bar{y} 
+y
+¯
+​	 , or any other letter.
+
+We also could index using any other letter, not just ii. We could just as easily use jj, kk, or mm to index each of our data values. The quizzes on the next concept will help reinforce this idea.
+
+Notice
+At second 0:12, this should say \sum\limits_{i=1}^5 x_i = x_1 + x_2 + x_3 + x_4 + x_5 
+i=1
+∑
+5
+​	 x 
+i
+​	 =x 
+1
+​	 +x 
+2
+​	 +x 
+3
+​	 +x 
+4
+​	 +x 
+5
+​	 . The x_ix 
+i
+​	  is missing here in front of the summation.
