@@ -1,0 +1,35 @@
+Playback Rate
+CaptionsPicture-in-Picture
+
+Fullscreen
+Example to Introduce Notation
+There is a lot going on in this video - here is a recap of the big ideas.
+
+Rows and Columns
+If you aren't familiar with spreadsheets, this will be covered in detail in future lessons. Spreadsheets are a common way to hold data. They are composed of rows and columns. Rows run horizontally, while columns run vertically. Each column in a spreadsheet commonly holds a specific variable, while each row is commonly called an instance or individual.
+
+The example used in the video is shown below.
+
+Date	Day of Week	Time Spent On Site (X)	Buy (Y)
+June 15	Thursday	5	No
+June 15	Thursday	10	Yes
+June 16	Friday	20	Yes
+This is a row:
+
+Date	Day of Week	Time Spent On Site (X)	Buy (Y)
+June 15	Thursday	5	No
+This is a column:
+
+Time Spent On Site (X)
+5
+10
+20
+Before Collecting Data
+Before collecting data, we usually start with a question, or many questions, that we would like to answer. The purpose of data is to help us in answering these questions.
+
+Random Variables
+A random variable is a placeholder for the possible values of some process (mostly... the term 'some process' is a bit ambiguous). As was stated before, notation is useful in that it helps us take complex ideas and simplify (often to a single letter or single symbol). We see random variables represented by capital letters (X, Y, or Z are common ways to represent a random variable).
+
+We might have the random variable X, which is a holder for the possible values of the amount of time someone spends on our site. Or the random variable Y, which is a holder for the possible values of whether or not an individual purchases a product.
+
+X is 'a holder' of the values that could possibly occur for the amount of time spent on our website. Any number from 0 to infinity really.

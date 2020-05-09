@@ -1,0 +1,38 @@
+Recap of Previous Video
+The table below summarizes our data types. To expand on the information in the table, you can look through the text that follows.
+
+Data Types		
+Quantitative:	Continuous	Discrete
+Height, Age, Income	Pages in a Book, Trees in Yard, Dogs at a Coffee Shop
+Categorical:	Ordinal	Nominal
+Letter Grade, Survey Rating	Gender, Marital Status, Breakfast Items
+Below is a little more detail of the information shared in the above table.
+
+Another Look
+To break down our data types, there are two main blocks:
+
+Quantitative and Categorical
+
+Quantitative can be further divided into Continuous or Discrete.
+
+Categorical data can be divided into Ordinal or Nominal.
+
+You should have now mastered what types of data in the world around us falls into each of these four buckets: Discrete, Continuous, Nominal, and Ordinal. In the next sections, we will work through the numeric summaries that relate specifically to quantitative variables.
+
+Quantitative vs. Categorical
+Some of these can be a bit tricky - notice even though zip codes are a number, they aren’t really a quantitative variable. If we add two zip codes together, we do not obtain any useful information from this new value. Therefore, this is a categorical variable.
+
+Height, Age, the Number of Pages in a Book and Annual Income all take on values that we can add, subtract and perform other operations with to gain useful insight. Hence, these are quantitative.
+
+Gender, Letter Grade, Breakfast Type, Marital Status, and Zip Code can be thought of as labels for a group of items or individuals. Hence, these are categorical.
+
+Continuous vs. Discrete
+To consider if we have continuous or discrete data, we should see if we can split our data into smaller and smaller units. Consider time - we could measure an event in years, months, days, hours, minutes, or seconds, and even at seconds we know there are smaller units we could measure time in. Therefore, we know this data type is continuous. Height, age, and income are all examples of continuous data. Alternatively, the number of pages in a book, dogs I count outside a coffee shop, or trees in a yard are discrete data. We would not want to split our dogs in half.
+
+Ordinal vs. Nominal
+In looking at categorical variables, we found Gender, Marital Status, Zip Code and your Breakfast items are nominal variables where there is no order ranking associated with this type of data. Whether you ate cereal, toast, eggs, or only coffee for breakfast; there is no rank ordering associated with your breakfast.
+
+Alternatively, the Letter Grade or Survey Ratings have a rank ordering associated with it, as ordinal data. If you receive an A, this is higher than an A-. An A- is ranked higher than a B+, and so on... Ordinal variables frequently occur on rating scales from very poor to very good. In many cases we turn these ordinal variables into numbers, as we can more easily analyze them, but more on this later!
+
+Final Words
+In this section, we looked at the different data types we might work with in the world around us. When we work with data in the real world, it might not be very clean - sometimes there are typos or missing values. When this is the case, simply having some expertise regarding the data and knowing the data type can assist in our ability to ‘clean’ this data. Understanding data types can also assist in our ability to build visuals to best explain the data. But more on this very soon!
