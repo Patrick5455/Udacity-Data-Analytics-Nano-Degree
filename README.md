@@ -6,6 +6,7 @@
 2. ***Spreadsheets, SQL, Numpy, Pandas, Seaborn & Matplotlib***
 3. ***Data Wrangling***
 4. ***Data Munging & Cleaning***
+
 5 ***Data Visualizations, Drawing Conclusions and Communicating Findings***
 
 
