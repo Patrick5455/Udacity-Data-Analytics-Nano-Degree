@@ -13,5 +13,5 @@
 1. ***Exploring Weather Trends***
 2. ***Inveestigaation and Analaysis of:***
     a. ```TMDb movie data```
-    b. ```No-how appointments```
+    b. ```No-show appointments```
     c. ```Gapminder World```
