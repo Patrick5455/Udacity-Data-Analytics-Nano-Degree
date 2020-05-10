@@ -2,7 +2,7 @@
 
 ### Knoweldge Areas:
 
-1. ***Descriptive and Inferetial Statistics***
+1. ***Descriptive, Inferetial Statistics, Probability***
 2. ***Spreadsheets, SQL, Numpy, Pandas, Seaborn and Matplotlib***
 3. ***Data Wrangling***
 4. ***Data Munging and Cleaning***
