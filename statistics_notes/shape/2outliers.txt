@@ -1,0 +1,36 @@
+Outliers
+We learned that outliers are points that fall very far from the rest of our data points. This influences measures like the mean and standard deviation much more than measures associated with the five number summary.
+
+Identifying Outliers
+There are a number of different techniques for identifying outliers. A full paper on this topic is provided here. In general, I usually just look at a picture and see if something looks suspicious!
+
+Common Techniques
+When outliers are present we should consider the following points.
+
+1. Noting they exist and the impact on summary statistics.
+
+2. If typo - remove or fix
+
+3. Understanding why they exist, and the impact on questions we are trying to answer about our data.
+
+4. Reporting the 5 number summary values is often a better indication than measures like the mean and standard deviation when we have outliers.
+
+5. Be careful in reporting. Know how to ask the right questions.
+
+There study of outliers in data/statistics is called amomaly detection.
+
+Outliers Advice
+Below are my guidelines for working with any column (random variable) in your dataset.
+
+1. Plot your data to identify if you have outliers.
+
+2. Handle outliers accordingly via the methods above.
+
+3. If no outliers and your data follow a normal distribution - use the mean and standard deviation to describe your dataset, and report that the data are normally distributed.
+
+Side note
+If you aren't sure if your data are normally distributed, there are plots called normal quantile plots and statistical methods like the Kolmogorov-Smirnov test that are aimed to help you understand whether or not your data are normally distributed. Implementing this test is beyond the scope of this class, but can be used as a fun fact.
+
+4. If you have skewed data or outliers, use the five number summary to summarize your data and report the outliers.
+
+

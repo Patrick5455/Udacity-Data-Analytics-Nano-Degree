@@ -1,0 +1,18 @@
+Histograms
+We learned how to build a histogram in this video, as this is the most popular visual for quantitative data.
+
+Shape
+From a histogram we can quickly identify the shape of our data, which helps influence all of the measures we learned in the previous concepts. We learned that the distribution of our data is frequently associated with one of the three shapes:
+
+1. Right-skewed
+
+2. Left-skewed
+
+3. Symmetric (frequently normally distributed)
+
+Summary
+Shape	Mean vs. Median	Real World Applications
+Symmetric (Normal)	Mean equals Median	Height, Weight, Errors, Precipitation
+Right-skewed	Mean greater than Median	Amount of drug remaining in a blood stream, Time between phone calls at a call center, Time until light bulb dies
+Left-skewed	Mean less than Median	Grades as a percentage in many universities, Age of death, Asset price changes
+The mode of a distribution is essentially the tallest bar in a histogram. There may be multiple modes depending on the number of peaks in our histogram.
