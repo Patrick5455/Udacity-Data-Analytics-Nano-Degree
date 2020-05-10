@@ -8,3 +8,10 @@
 4. ***Data Munging and Cleaning***
 5 ***Data Visualizations, Drawing Conclusions and Communicating Findings***
 
+
+### Projects:
+1. ***Exploring Weather Trends***
+2. ***Inveestigaation and Analaysis of:***
+    a. TMDb movie data
+    b. No-how appointments
+    c. ~Gapminder World~
