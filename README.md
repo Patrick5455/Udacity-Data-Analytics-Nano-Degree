@@ -14,4 +14,4 @@
 2. ***Inveestigaation and Analaysis of:***
     a. TMDb movie data
     b. No-how appointments
-    c. ``Gapminder World```
+    c. ```Gapminder World```
