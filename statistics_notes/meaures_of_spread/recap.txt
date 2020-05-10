@@ -1,0 +1,73 @@
+Recap
+Variable Types
+We have covered a lot up to this point! We started with identifying data types as either categorical or quantitative. We then learned, we could identify quantitative variables as either continuous or discrete. We also found we could identify categorical variables as either ordinal or nominal.
+
+Categorical Variables
+When analyzing categorical variables, we commonly just look at the count or percent of a group that falls into each level of a category. For example, if we had two levels of a dog category: lab and not lab. We might say, 32% of the dogs were lab (percent), or we might say 32 of the 100 dogs I saw were labs (count).
+
+However, the 4 aspects associated with describing quantitative variables are not used to describe categorical variables.
+
+Quantitative Variables
+Then we learned there are four main aspects used to describe quantitative variables:
+
+Measures of Center
+Measures of Spread
+Shape of the Distribution
+Outliers
+We looked at calculating measures of Center
+
+Means
+Medians
+Modes
+We also looked at calculating measures of Spread
+
+Range
+Interquartile Range
+Standard Deviation
+Variance
+Calculating Variance
+We saw that we could calculate the variance as:
+
+\bold{\frac{1}{n}\sum\limits_{i=1}^n(x_i - \bar{x})^2} 
+n
+1
+​	  
+i=1
+∑
+n
+​	 (x 
+i
+​	 − 
+x
+¯
+ ) 
+2
+ 
+
+You will also see:
+
+\bold{\frac{1}{n-1}\sum\limits_{i=1}^n(x_i - \bar{x})^2} 
+n−1
+1
+​	  
+i=1
+∑
+n
+​	 (x 
+i
+​	 − 
+x
+¯
+ ) 
+2
+ 
+
+The reason for this is beyond the scope of what we have covered thus far, but you can find an explanation here.
+
+You can commonly find answers to your questions with a quick Google search. Now is a great time to get started with this practice! This answer should make more sense at the completion of this lesson.
+
+Standard Deviation vs. Variance
+The standard deviation is the square root of the variance. In practice, you usually use the standard deviation rather than the variance. The reason for this is because the standard deviation shares the same units with our original data, while the variance has squared units.
+
+What Next?
+In the next sections, we will be looking at the last two aspects of quantitative variables: shape and outliers. What we know about measures of center and measures of spread will assist in your understanding of these final two aspects.

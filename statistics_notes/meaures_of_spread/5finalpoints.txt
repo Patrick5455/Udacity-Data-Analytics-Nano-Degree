@@ -1,0 +1,16 @@
+Important Final Points
+The variance is used to compare the spread of two different groups. A set of data with higher variance is more spread out than a dataset with lower variance. Be careful though, there might just be an outlier (or outliers) that is increasing the variance, when most of the data are actually very close.
+
+
+When comparing the spread between two datasets, the units of each must be the same.
+
+
+When data are related to money or the economy, higher variance (or standard deviation) is associated with higher risk.
+
+
+The standard deviation is used more often in practice than the variance, because it shares the units of the original dataset.
+
+Use in the World
+The standard deviation is associated with risk in finance, assists in determining the significance of drugs in medical studies, and measures the error of our results for predicting anything from the amount of rainfall we can expect tomorrow to your predicted commute time tomorrow.
+
+These applications are beyond the scope of this lesson as they pertain to specific fields, but know that understanding the spread of a particular set of data is extremely important to many areas. In this lesson you mastered the calculation of the most common measures of spread.
