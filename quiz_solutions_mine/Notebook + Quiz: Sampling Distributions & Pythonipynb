@@ -1,0 +1,471 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Sampling Distributions Introduction\n",
+    "\n",
+    "In order to gain a bit more comfort with this idea of sampling distributions, let's do some practice in python.\n",
+    "\n",
+    "Below is an array that represents the students we saw in the previous videos, where 1 represents the students that drink coffee, and 0 represents the students that do not drink coffee."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import numpy as np\n",
+    "import matplotlib.pyplot as plot\n",
+    "\n",
+    "np.random.seed(42)\n",
+    "students = np.array([1,0,1,1,1,1,0,0,0,0,1,1,1,1,1,1,1,1,1,1,0])"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "`1.` Find the proportion of students who drink coffee in the above array. Store this value in a variable **p**."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "21"
+      ]
+     },
+     "execution_count": 13,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "tot_stu = students.shape[0]\n",
+    "tot_stu"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1])"
+      ]
+     },
+     "execution_count": 14,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "cofee_yes = students[students==1]\n",
+    "cofee_yes"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "0.7142857142857143"
+      ]
+     },
+     "execution_count": 15,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "p = cofee_yes.shape[0]/ tot_stu # or students.mean()\n",
+    "p"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "`2.` Use numpy's **random.choice** to simulate 5 draws from the `students` array.  What is proportion of your sample drink coffee?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "0.59999999999999998"
+      ]
+     },
+     "execution_count": 16,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "sample_students = np.random.choice(students, size=5)\n",
+    "\n",
+    "sample_students_prop = sample_students.mean()\n",
+    "sample_students_prop"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "`3.` Repeat the above to obtain 10,000 additional proportions, where each sample was of size 5.  Store these in a variable called `sample_props`."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "sample_props = []\n",
+    "for _ in range (10000):\n",
+    "    sample_props.append(np.random.choice(students, size=5).mean())\n",
+    "sample_props = np.array(sample_props)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "`4.` What is the mean proportion of all 10,000 of these proportions?  This is often called **the mean of the sampling distribution**."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "0.71399999999999997"
+      ]
+     },
+     "execution_count": 18,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "sample_props_mean = sample_props.mean()\n",
+    "sample_props_mean"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "collapsed": true
+   },
+   "source": [
+    "`5.` What are the variance and standard deviation for the original 21 data values?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Var of 21 students: 0.20408163265306126\n",
+      "Std of 21 students: 0.45175395145262565\n"
+     ]
+    }
+   ],
+   "source": [
+    "stu_var = np.var(students)\n",
+    "stU_sd = np.std(students)\n",
+    "\n",
+    "print(f'Var of 21 students: {stu_var}')\n",
+    "print(f'Std of 21 students: {stU_sd}')"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "`6.` What are the variance and standard deviation for the 10,000 proportions you created?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Var of 5 students props: 0.041763999999999996\n",
+      "Std of 5 students props: 0.2043624231604235\n"
+     ]
+    }
+   ],
+   "source": [
+    "sample_props_var = np.var(sample_props)\n",
+    "sample_props_sd = np.std(sample_props)\n",
+    "\n",
+    "print(f'Var of 5 students props: {sample_props_var}')\n",
+    "print(f'Std of 5 students props: {sample_props_sd}')"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "`7.` Compute p(1-p), which of your answers does this most closely match?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "0.20408163265306123"
+      ]
+     },
+     "execution_count": 21,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "Pa = p*(1-p)\n",
+    "Pa"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'it matches var of 21 students - 100.00000000000003%'"
+      ]
+     },
+     "execution_count": 22,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "f'it matches var of 21 students - {(stu_var/Pa)*100}%'"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "`8.` Compute p(1-p)/n, which of your answers does this most closely match?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "0.04081632653061225"
+      ]
+     },
+     "execution_count": 23,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "Pb = p*(1-p)/5\n",
+    "Pb"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'it matches var of 10,000 props - 102.32179999999997%'"
+      ]
+     },
+     "execution_count": 25,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "f'it matches var of 10,000 props - {(sample_props_var/Pb)*100}%'"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "`9.` Notice that your answer to `8.` is commonly called the **variance of the sampling distribution**.  If you were to change your first sample to be 20, what would this do for the variance of the sampling distribution?  Simulate and calculate the new answers in `6.` and `8.` to check that the consistency you found before still holds."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "##Simulate your 20 draws\n",
+    "sample_props2 = []\n",
+    "for _ in range (10000):\n",
+    "    sample_props2.append(np.random.choice(students,size=20).mean())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "0.71492500000000003"
+      ]
+     },
+     "execution_count": 27,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "sample_props2 = np.array(sample_props2)\n",
+    "sample_props2_mean = sample_props2.mean()\n",
+    "sample_props2_mean"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "0.010204081632653062"
+      ]
+     },
+     "execution_count": 28,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "Pc =  p*(1-p)/20\n",
+    "Pc"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Var of 20 students prop: 0.010300994374999999\n",
+      "Std of 20 students prop: 0.10149381446669545\n"
+     ]
+    }
+   ],
+   "source": [
+    "##Compare your variance values as computed in 6 and 8, \n",
+    "##but with your sample of 20 values\n",
+    "\n",
+    "sample_props2_var = np.var(sample_props2)\n",
+    "sample_props2_std = np.std(sample_props2)\n",
+    "\n",
+    "\n",
+    "print(f'Var of 20 students prop: {sample_props2_var}')\n",
+    "print(f'Std of 20 students prop: {sample_props2_std}')"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "`10.` Finally, plot a histgram of the 10,000 draws from both the proportions with a sample size of 5 and the proportions with a sample size of 20.  Each of these distributions is a sampling distribution.  One is for the proportions of sample size 5 and the other a sampling distribution for proportions with sample size 20."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "plot.hist(sample_props, alpha=.5)\n",
+    "plot.hist(sample_props2, alpha=.5);"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.6.3"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
